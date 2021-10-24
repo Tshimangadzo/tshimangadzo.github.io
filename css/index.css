@@ -1,29 +1,31 @@
 /* Typography imported from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
-html { height: 100% }
-body{
-  margin: 0px;
-  min-height: 100%
+html {
+  height: 100%;
 }
-.container{
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+.container {
   display: grid;
   grid-template-rows: 1fr 6fr 1fr;
 }
 
 .header {
   width: 100%;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.514);
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
 }
-.otherContent{
+.otherContent {
   margin-left: 80px;
   display: grid;
   justify-self: center;
   column-gap: 30px;
-  grid-template-columns: 1fr 1fr 1.8fr 1fr
+  grid-template-columns: 1fr 1fr 1.8fr 1fr;
 }
 
 a {
@@ -40,35 +42,98 @@ li {
 header ul li a:hover {
   opacity: 0.6;
 }
-.home{
+.home {
   margin-left: 20px;
 }
 
-.content{
+.content {
   margin-top: 50px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   font-size: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.5em;
 }
-img{
+img {
   border-radius: 50%;
-  margin-left: 20%;
 }
-.myName{
-  margin-left: 27%;
+.myName {
+  margin-left: 60px;
 }
-.aboutMe{
-  margin-right: 10%;
+.image {
+  justify-self: center;
 }
-footer{
+.aboutMe {
+  margin: 5%;
+}
+
+footer {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.514);
   height: 80px;
   align-items: center;
 }
 
-footer li{
+footer li {
   justify-self: center;
+}
+.contactMe{
+  margin-top: 50px;
+}
+input,textarea{
+  font-size: 1em;
+  width: 80%;
+  height: 50px;
+  border: solid;
+  border-radius: 8px;
+  margin: 0% 5% 2% 5%;
+
+}
+button{
+  font-size: 1em;
+  height: 50px;
+  border: solid;
+  border-radius: 8px;
+  margin: 0% 5% 2% 20%;
+  width: 50%;
+  justify-self: center;
+  background-color:rgba(128, 128, 128, 0.514); 
+}
+#message{
+  height: 100px;
+}
+
+@media screen and (max-width: 1119px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto;
+  }
+  .content {
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 2.4fr 1fr;
+    align-items: center;
+  }
+  .otherContent {
+    display: none;
+  }
+  .myName {
+    margin-left: -5%;
+    width: 100%;
+    font-size: 2em;
+  }
+  img {
+    margin-left: 10%;
+  }
+  .home {
+    font-size: 1.5em;
+  }
 }
