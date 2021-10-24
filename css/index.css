@@ -1,0 +1,74 @@
+/* Typography imported from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+
+html { height: 100% }
+body{
+  margin: 0px;
+  min-height: 100%
+}
+.container{
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.header {
+  width: 100%;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.otherContent{
+  margin-left: 80px;
+  display: grid;
+  justify-self: center;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1.8fr 1fr
+}
+
+a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+header ul li a:hover {
+  opacity: 0.6;
+}
+.home{
+  margin-left: 20px;
+}
+
+.content{
+  margin-top: 50px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-size: 1.5em;
+}
+img{
+  border-radius: 50%;
+  margin-left: 20%;
+}
+.myName{
+  margin-left: 27%;
+}
+.aboutMe{
+  margin-right: 10%;
+}
+footer{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: gray;
+  height: 80px;
+  align-items: center;
+}
+
+footer li{
+  justify-self: center;
+}
