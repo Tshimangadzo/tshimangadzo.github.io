@@ -2,15 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
 html {
-  height: 100%;
+  width: 100%;
 }
 body {
   margin: 0px;
   min-height: 100%;
+  width: fit-content;
 }
 .container {
   display: grid;
-  grid-template-rows: 1fr 6fr 1fr;
+
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
   align-items: center;
 }
 .otherContent {
+  margin-top: 20px;
   margin-left: 80px;
   display: grid;
   justify-self: center;
@@ -42,9 +44,9 @@ li {
 header ul li a:hover {
   opacity: 0.6;
 }
-.home {
-  margin-left: 20px;
-}
+/* .home {
+  margin: 20px 0px 0px 100px ;
+} */
 
 .content {
   margin-top: 50px;
@@ -77,19 +79,19 @@ footer {
 footer li {
   justify-self: center;
 }
-.contactMe{
+.contactMe {
   margin-top: 50px;
 }
-input,textarea{
+input,
+textarea {
   font-size: 1em;
   width: 80%;
   height: 50px;
   border: solid;
   border-radius: 8px;
   margin: 0% 5% 2% 5%;
-
 }
-button{
+button {
   font-size: 1em;
   height: 50px;
   border: solid;
@@ -97,35 +99,34 @@ button{
   margin: 0% 5% 2% 20%;
   width: 50%;
   justify-self: center;
-  background-color:rgba(128, 128, 128, 0.514); 
+  background-color: rgba(128, 128, 128, 0.514);
   cursor: pointer;
 }
-#message{
+#message {
+  font-size: 1.3em;
   height: 100px;
 }
-
+.icon {
+  display: none;
+}
 @media screen and (max-width: 1119px) {
   .container {
     display: grid;
-    grid-template-rows: auto;
   }
   .content {
     font-size: 1.5em;
     display: grid;
     grid-template-columns: 1fr;
   }
-
-  .header {
-    width: 100%;
-    background-color: gray;
+  .header{
     display: grid;
-    height: 100px;
-    grid-template-columns: 2.4fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr;
+    align-self: center;
+    font-size: 0.5em;
   }
   .otherContent {
     display: none;
-  }
+  } 
   .myName {
     margin-left: -5%;
     width: 100%;
@@ -135,6 +136,25 @@ button{
     margin-left: 10%;
   }
   .home {
+    align-self: center;
+      font-size: 1.5em;
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+  }
+  .icon {
+    display: grid;
+    font-size: 5em;
+  }
+  .headerResponsive{
+    background-color: gray;
+    font-size: 0.5em;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .otherContentResposive{
+    display: grid;
     font-size: 1.5em;
+    
   }
 }

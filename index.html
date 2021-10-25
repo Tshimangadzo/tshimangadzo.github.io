@@ -1,64 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <link rel="stylesheet"
+    <title>Mudzanani Tshimangadzo - Home page</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/index.js"></script>
   </head>
   <body>
     <div class="container">
-          <div class="header">
-            <header class="home">
-              <li ><a href="#" onclick="getAboutMe()">Hello There, I'm Tshimangadzo!</a></li>
-            </header>
-            <header class="otherContent">
-              <li><a href="#aboutMe">About me</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#learnTshivenda">Learn Tshivenda</a></li>
-              <li><a href="#contactMe" onclick="getContactMe()">Say hello</a></li>
-            </header>
+      <div class="header" id="header">
+        <header class="home">
+          <ul class="index">
+            <li>
+              <a href="#" onclick="getAboutMe()"
+                >Hello There, I'm Tshimangadzo!</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="icon"
+                id="icon"
+                onclick="getListFromIcon()"
+                >&#9776;</a
+              >
+            </li>
+          </ul>
+        </header>
+        <header class="otherContent" id="otherContent">
+          <ul>
+            <li><a href="#aboutMe">About me</a></li>
+          </ul>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+          <ul>
+            <li><a href="#learntshivenda">Learn Tshivenda</a></li>
+          </ul>
+          <ul>
+            <li><a href="#contactMe" onclick="getContactMe()">Say hello</a></li>
+          </ul>
+        </header>
+      </div>
+      <div class="content">
+        <div class="image">
+          <img
+            src="./img/pic.jpg"
+            alt="Profile Mudzanani Tshimangadzo Mushe"
+          /><br />
+          <p class="myName">Mudzanani Tshimangadzo Mushe</p>
         </div>
-        <div class="content">
-          <div class="image">
-          <img src="./img/pic.jpg"><br>
-            <p class="myName">
-              Mudzanani Tshimangadzo Mushe
-            </p>
-          </div>
-          <div class="aboutMe" id="aboutMe" >
-            <p>I believe that the world is increasingly shifting to the digital space, and being apart of this transition is exciting, 
-              particularly when one looks how far web development has gone from its formidable years in mid the 1980s when 
-              the web was introduced by Tim Bernes-Lee.</p>
+        <div class="aboutMe" id="aboutMe">
+          <p>
+            I believe that the world is increasingly shifting to the digital
+            space, and being apart of this transition is exciting, particularly
+            when one looks how far web development has gone from its formidable
+            years in mid the 1980s when the web was introduced by Tim
+            Bernes-Lee.
+          </p>
 
-            <p>I've always admired the possibilities and challenges that web developers face each day, when arriving to their solutions. 
-              I believe that this constant challenge of finding new creative ways to deal with problems, ultimately ensuring continued 
-              skills development ascribing to one of my favorite quotes by Albert Einstein that, "the day I will stop learning is the 
-              day I start dying".</p>
+          <p>
+            I've always admired the possibilities and challenges that web
+            developers face each day, when arriving to their solutions. I
+            believe that this constant challenge of finding new creative ways to
+            deal with problems, ultimately ensuring continued skills development
+            ascribes to one of my favorite quotes by Albert Einstein that, "the
+            day I will stop learning is the day I start dying".
+          </p>
 
-            <p>Nonetheless, I am passionate about how a computer works so much so that in each and every day I challenge myself to learn 
-              a new thing, with the ultimate goal of being the best I can be at my craft. This is certainly the attitude of my personal
-              inspiration.</p>
-          </div>
-          <div class="contactMe" id="contactMe" style="display: none;">
-               <form >
-                 <input type="text" placeholder="Tittle" required><br>
-                 <input type="email" placeholder="Email address" required><br>
-                 <input type="tel" placeholder="Cell number"  required><br>
-                 <textarea type="textarea" placeholder="Message" id="message" required></textarea><br>
-                 <button type="submit">Submit</button>
-               </form>
-          </div>
+          <p>
+            Nonetheless, I am passionate about how a computer works so much so
+            that in each and every day I challenge myself to learn a new thing,
+            with the ultimate goal of being the best I can be at my craft. This
+            is certainly the attitude of my personal inspiration.
+          </p>
         </div>
-        <footer>
-               <li><a href="https://github.com/tshimangadzo"><i class="fab fa-github"></i></a></li>
-               <li><a href="https://twitter.com/mudzanani_mushe"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://facebook.com/tshimangadzo.mudzanani"><i class="fab fa-facebook"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/tshimangadzo-mudzanani-84499680/"><i class="fab fa-linkedin-in"></i></a></li>
-        </footer>
-        
+        <div class="contactMe" id="contactMe" style="display: none">
+          <form>
+            <input type="text" placeholder="Tittle" required /><br />
+            <input type="email" placeholder="Email address" required /><br />
+            <input type="tel" placeholder="Cell number" required /><br />
+            <textarea placeholder="Message" id="message" required></textarea
+            ><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <ul>
+          <li>
+            <a href="https://github.com/tshimangadzo"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://twitter.com/mudzanani_mushe"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://facebook.com/tshimangadzo.mudzanani"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tshimangadzo-mudzanani-84499680/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
