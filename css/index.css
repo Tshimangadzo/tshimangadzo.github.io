@@ -11,7 +11,6 @@ body {
 }
 .container {
   display: grid;
-
 }
 
 .header {
@@ -22,7 +21,6 @@ body {
   align-items: center;
 }
 .otherContent {
-  margin-top: 20px;
   margin-left: 80px;
   display: grid;
   justify-self: center;
@@ -44,9 +42,6 @@ li {
 header ul li a:hover {
   opacity: 0.6;
 }
-/* .home {
-  margin: 20px 0px 0px 100px ;
-} */
 
 .content {
   margin-top: 50px;
@@ -111,53 +106,59 @@ button {
 }
 @media screen and (max-width: 1119px) {
   .container {
-    display: grid;
+    width: 100%;
+
+
   }
   .content {
     font-size: 1.5em;
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
+    
   }
-  .header{
+  .header {
     display: grid;
     grid-template-columns: 1fr;
     align-self: center;
-    font-size: 0.5em;
   }
   .otherContent {
     display: none;
-  } 
+  }
   .myName {
     margin-left: -5%;
     width: 100%;
     font-size: 2em;
   }
   img {
-    margin-left: 10%;
+    margin-left: 15%;
   }
   .home {
     align-self: center;
-      font-size: 1.5em;
-      display: grid;
-      grid-template-columns: 6fr 1fr;
+    font-size: 1.5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
   }
   .icon {
     display: grid;
-    font-size: 5em;
   }
-  .headerResponsive{
+  .headerResponsive {
     background-color: gray;
-    font-size: 0.5em;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    width: 100%;
   }
 
-  .otherContentResposive{
+  .otherContentResposive {
     display: grid;
-    font-size: 1.5em;
-    
+
   }
-  .index{
+  .index {
     align-self: center;
+  }
+  footer {
+    height: 150px;
+    font-size: 2em;
   }
 }
