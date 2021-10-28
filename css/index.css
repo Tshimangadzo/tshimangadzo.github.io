@@ -1,9 +1,9 @@
 /* Typography imported from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
-html {
+/* html {
   width: 100%;
-}
+} */
 body {
   margin: 0px;
   min-height: 100%;
@@ -107,15 +107,12 @@ button {
 @media screen and (max-width: 1119px) {
   .container {
     width: 100%;
-
-
   }
   .content {
     font-size: 1.5em;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    
   }
   .header {
     display: grid;
@@ -152,7 +149,6 @@ button {
 
   .otherContentResposive {
     display: grid;
-
   }
   .index {
     align-self: center;

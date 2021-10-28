@@ -84,8 +84,9 @@
           </p>
         </div>
         <div class="contactMe" id="contactMe" style="display: none">
-          <form action="http://formspree.io/mudzanani27@gmail.com"
-            method="post"
+          <form
+            action="https://formspree.io/f/mpzkeggr"
+            method="POST"
             enctype="text/plain"
           >
             <input
@@ -106,7 +107,7 @@
               type="email"
               placeholder="Email address"
               id="email"
-              name="email"
+              name="_replyto"
               required
             /><br />
             <input
@@ -116,11 +117,12 @@
               name="cell"
               required
             /><br />
-            <textarea 
-            placeholder="Message" 
-            id="message" 
-            name="message"
-            required>
+            <textarea
+              placeholder="Message"
+              id="message"
+              name="message"
+              required
+            >
             </textarea
             ><br />
             <button type="submit" onclick="sendEmail()">Submit</button>
