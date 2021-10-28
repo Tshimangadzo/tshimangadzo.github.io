@@ -1,13 +1,13 @@
 /* Typography imported from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
-/* html {
+html {
   width: 100%;
-} */
+} 
 body {
   margin: 0px;
   min-height: 100%;
-  width: fit-content;
+  width: 100%;
 }
 .container {
   display: grid;
@@ -100,6 +100,7 @@ button {
 #message {
   font-size: 1.3em;
   height: 100px;
+
 }
 .icon {
   display: none;
@@ -145,10 +146,12 @@ button {
     display: grid;
     grid-template-rows: 1fr 2fr;
     width: 100%;
+    font-size: 1em;
   }
 
   .otherContentResposive {
     display: grid;
+    font-size: 1.5em;
   }
   .index {
     align-self: center;
