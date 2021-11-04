@@ -1,5 +1,5 @@
 /* Typography imported from Google Fonts */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400"); */
 
 html {
   width: 100%;
@@ -73,6 +73,7 @@ footer {
 
 footer li {
   justify-self: center;
+  margin-left: 40%;
 }
 .contactMe {
   margin-top: 50px;
