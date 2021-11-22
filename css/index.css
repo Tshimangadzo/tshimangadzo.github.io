@@ -1,18 +1,22 @@
 /* Typography imported from Google Fonts */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400"); */
 
 html {
   width: 100%;
-} 
+}
 body {
   margin: 0px;
   min-height: 100%;
   width: 100%;
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 .container {
   display: grid;
 }
 
+.icon {
+  display: none;
+}
 .header {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.514);
@@ -20,17 +24,28 @@ body {
   grid-template-columns: 1fr 2fr;
   align-items: center;
 }
+
 .otherContent {
-  margin-left: 80px;
   display: grid;
   justify-self: center;
-  column-gap: 30px;
-  grid-template-columns: 1fr 1fr 1.8fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.top_search_data{
+  margin: 0% 5% 2% 30%; 
+}
+
+.top_search_data .fa{
+  cursor: pointer;
+}
+
+.search_word{
+  margin: 0% 5% 2% 5%;
+  background-color: rgba(128, 128, 128, 0.514);
+  border-radius: 10px;
 }
 
 a {
   text-decoration: none;
-  font-family: "Playfair Display", serif;
   font-size: 1.5em;
   color: #000;
 }
@@ -49,7 +64,7 @@ header ul li a:hover {
   grid-template-columns: 1fr 1fr;
   font-size: 1.5em;
 }
-img {
+.image img {
   border-radius: 50%;
 }
 .myName {
@@ -73,12 +88,14 @@ footer {
 
 footer li {
   justify-self: center;
+  margin-left: 40%;
 }
 .contactMe {
   margin-top: 50px;
 }
 input,
-textarea {
+textarea,
+select {
   font-size: 1em;
   width: 80%;
   height: 50px;
@@ -100,11 +117,31 @@ button {
 #message {
   font-size: 1.3em;
   height: 100px;
+}
 
+.showData {
+  display: grid;
+  grid-template-rows: 1fr 1.3fr;
+  margin: 5% 5% 5% 5%;
 }
-.icon {
-  display: none;
+.names{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
 }
+
+.skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skills img{
+  height: 200px;
+}
+.definitions {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media screen and (max-width: 1119px) {
   .container {
     width: 100%;
@@ -124,11 +161,10 @@ button {
     display: none;
   }
   .myName {
-    margin-left: -5%;
     width: 100%;
     font-size: 2em;
   }
-  img {
+  .image img {
     margin-left: 15%;
   }
   .home {
@@ -160,4 +196,14 @@ button {
     height: 150px;
     font-size: 2em;
   }
+  input{
+    height: 100px;
+  }
+  .showData{
+    margin: 1% 5% 5% 5%;
+  }
+  .skills img {
+    margin: 10% 0% 10% 20%;
+  }
+
 }

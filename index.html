@@ -18,7 +18,7 @@
         <header class="home">
           <ul class="index">
             <li>
-              <a href="#" onclick="getAboutMe()"
+              <a href="#" onclick="showData('about')"
                 >Hello There, I'm Tshimangadzo!</a
               >
             </li>
@@ -37,16 +37,16 @@
         </header>
         <header class="otherContent" id="otherContent">
           <ul>
-            <li><a href="#aboutMe" onclick="getAboutMe()">About me</a></li>
+            <li><a href="#about" onclick="showData('about')">About me</a></li>
           </ul>
           <ul>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects" onclick="showData('projects')">Projects</a></li>
           </ul>
           <ul>
-            <li><a href="./learn_tshivenda/index.html">Learn Tshivenda</a></li>
+            <li><a href="#skills" onclick="showData('skills')">Skills</a></li>
           </ul>
           <ul>
-            <li><a href="#contactMe" onclick="getContactMe()">Say hello</a></li>
+            <li><a href="#contact" onclick="showData('contact')">Say hello</a></li>
           </ul>
         </header>
       </div>
@@ -58,7 +58,7 @@
           /><br />
           <p class="myName">Mudzanani Tshimangadzo Mushe</p>
         </div>
-        <div class="aboutMe" id="aboutMe">
+        <div class="about" id="about">
           <p>
             I believe that the world is increasingly shifting to the digital
             space, and being apart of this transition is exciting, particularly
@@ -83,10 +83,10 @@
             is certainly the attitude of my personal inspiration.
           </p>
         </div>
-        <div class="contactMe" id="contactMe" style="display: none">
+        <div class="contact" id="contact" style="display: none">
           <form
-            action="https://formspree.io/f/mpzkeggr"
-            method="POST"
+            action="./php/sendEmail.php"
+            method="POST" enctype = "multipart/form-data"
           >
             <input
               type="text"
@@ -126,6 +126,16 @@
             ><br />
             <button type="submit">Submit</button>
           </form>
+        </div>
+
+        <div class="skills" id="skills" style="display: none;">
+          <img src="./img/css.jpg" alt="css image">
+          <img src="./img/html.jpg" alt="html  image">
+          <img src="./img/java.png" alt="java image">
+          <img src="./img/python.jpg" alt="python image">
+        </div>
+        <div class="projects" id="projects" style="display: none;">
+          Projects
         </div>
       </div>
       <footer>
