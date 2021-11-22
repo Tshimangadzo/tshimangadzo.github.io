@@ -129,13 +129,20 @@ button {
   grid-template-columns: 1fr;
   align-self: center;
 }
+.languages{
+  align-items: center;
+}
 
 .skills{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+.projects a{
+  height: 100px;
 }
 .skills img{
-  height: 200px;
+  margin: 0% 10% 10% 0%;
+  height: 100px;
 }
 .definitions {
   display: grid;
