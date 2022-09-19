@@ -1,136 +1,91 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Mudzanani Tshimangadzo - Home page</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <script src="./js/index.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header" id="header">
-        <header class="home">
-          <ul class="index">
-            <li>
-              <a href="#" onclick="showData('about')"
-                >Hello There, I'm Tshimangadzo!</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a
-                href="javascript:void(0);"
-                class="icon"
-                id="icon"
-                onclick="getListFromIcon()"
-                >&#9776;</a
-              >
-            </li>
-          </ul>
-        </header>
-        <header class="otherContent" id="otherContent">
-          <ul>
-            <li><a href="#about" onclick="showData('about')">About me</a></li>
-          </ul>
-          <ul>
-            <li><a href="#projects" onclick="showData('projects')">Projects</a></li>
-          </ul>
-          <ul>
-            <li><a href="#skills" onclick="showData('skills')">Skills</a></li>
-          </ul>
-          <ul>
-            <li><a href="#contact" onclick="showData('contact')">Say hello</a></li>
-          </ul>
-        </header>
+
+<head>
+  <title>Mudzanani Tshimangadzo - Home page</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header" id="header">
+      <header class="home">
+        <ul class="index">
+          <li>
+            <a href="#" onclick="showData('about')">Hello There, I'm Tshimangadzo!</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="icon" id="icon" onclick="getListFromIcon()">&#9776;</a>
+            <a href="javascript:void(0);" class="cancelIcon" id="cancelIcon" onclick="getListFromIcon()">&#9932;</a>
+          </li>
+        </ul>
+      </header>
+      <header class="otherContent" id="otherContent">
+        <ul>
+          <li><a href="#about" onclick="showData('about')">About me</a></li>
+        </ul>
+        <ul>
+          <li><a href="#projects" onclick="showData('projects')">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="#skills" onclick="showData('skills')">Skills</a></li>
+        </ul>
+        <ul>
+          <li><a href="#contact" onclick="showData('contact')">Say hello</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="content" id="content">
+      <div class="image">
+        <img src="./img/pic.jpg" alt="Profile Mudzanani Tshimangadzo Mushe" /><br />
+        <p class="myName">Mudzanani Tshimangadzo Mushe</p>
       </div>
-      <div class="content">
-        <div class="image">
-          <img
-            src="./img/pic.jpg"
-            alt="Profile Mudzanani Tshimangadzo Mushe"
-          /><br />
-          <p class="myName">Mudzanani Tshimangadzo Mushe</p>
-        </div>
-        <div class="about" id="about">
-          <p>
-            I believe that the world is increasingly shifting to the digital
-            space, and being apart of this transition is exciting, particularly
-            when one looks how far web development has gone from its formidable
-            years in mid the 1980s when the web was introduced by Tim
-            Bernes-Lee.
-          </p>
+      <div class="about" id="about">
+        <p>
+          I believe that the world is increasingly shifting to the digital
+          space, and being apart of this transition is exciting, particularly
+          when one looks how far web development has gone from its formidable
+          years in mid the 1980s when the web was introduced by Tim
+          Bernes-Lee.
+        </p>
 
-          <p>
-            I've always admired the possibilities and challenges that web
-            developers face each day, when arriving to their solutions. I
-            believe that this constant challenge of finding new creative ways to
-            deal with problems, ultimately ensuring continued skills development
-            ascribes to one of my favorite quotes by Albert Einstein that, "the
-            day I will stop learning is the day I start dying".
-          </p>
+        <p>
+          I've always admired the possibilities and challenges that web
+          developers face each day, when arriving to their solutions. I
+          believe that this constant challenge of finding new creative ways to
+          deal with problems, ultimately ensuring continued skills development
+          ascribes to one of my favorite quotes by Albert Einstein that, "the
+          day I will stop learning is the day I start dying".
+        </p>
 
-          <p>
-            Nonetheless, I am passionate about how a computer works so much so
-            that in each and every day I challenge myself to learn a new thing,
-            with the ultimate goal of being the best I can be at my craft. This
-            is certainly the attitude of my personal inspiration.
-          </p>
-        </div>
-        <div class="contact" id="contact" style="display: none">
-          <form
-            action="./php/sendEmail.php"
-            method="POST" enctype = "multipart/form-data"
-          >
-            <input
-              type="text"
-              placeholder="Subject"
-              id="subject"
-              name="subject"
-              required
-            /><br />
-            <input
-              type="text"
-              placeholder="Your name"
-              id="name"
-              name="name"
-              required
-            /><br />
-            <input
-              type="email"
-              placeholder="Email address"
-              id="email"
-              name="_replyto"
-              required
-            /><br />
-            <input
-              type="tel"
-              placeholder="Cell number"
-              id="cell"
-              name="cell"
-              required
-            /><br />
-            <textarea
-              placeholder="Message"
-              id="message"
-              name="message"
-              required
-            >
-            </textarea
-            ><br />
-            <button type="submit">Submit</button>
-          </form>
-        </div>
+        <p>
+          Nonetheless, I am passionate about how a computer works so much so
+          that in each and every day I challenge myself to learn a new thing,
+          with the ultimate goal of being the best I can be at my craft. This
+          is certainly the attitude of my personal inspiration.
+        </p>
+      </div>
+      <div class="contact" id="contact" style="display: none">
+        <form action="./php/sendEmail.php" method="POST" enctype="multipart/form-data">
+          <input type="text" placeholder="Subject" id="subject" name="subject" required /><br />
+          <input type="text" placeholder="Your name" id="name" name="name" required /><br />
+          <input type="email" placeholder="Email address" id="email" name="_replyto" required /><br />
+          <input type="tel" placeholder="Cell number" id="cell" name="cell" required /><br />
+          <textarea placeholder="Message" id="message" name="message" required>
+            </textarea><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
-        <div class="skills" id="skills" style="display: none;">
-           <p class="languages">Tech Stack </p>
-           <p>
+      <div class="skills" id="skills" style="display: none;">
+        <p class="languages">Tech Stack </p>
+        <p>
           <img src="./img/css.jpg" alt="css image">
           <img src="./img/html.jpg" alt="html  image">
           <img src="./img/java.png" alt="java image">
@@ -140,44 +95,38 @@
           <img src="./img/python.png" alt="c sharp image">
           <img src="./img/sql.png" alt="Sql image">
         </p>
-        </div>
-        <div class="projects" id="projects" style="display: none;">
-          <p>
-            <a href="http://tshimangadzo.co.za/learn_tshivenda/index.html">Learn Tshivenda</a><br>
-            The aim of this project is to teach people to speak and write Tshivenda</p>
-        </div>
       </div>
-      <footer>
-        <ul>
-          <li>
-            <a href="https://github.com/tshimangadzo"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://twitter.com/mudzanani_mushe"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://facebook.com/tshimangadzo.mudzanani"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/tshimangadzo-mudzanani-84499680/"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-        </ul>
-      </footer>
+      <div class="projects" id="projects" style="display: none;">
+        <p>
+          <a href="http://tshimangadzo.co.za/learn_tshivenda/index.html" target="_blank">Learn Tshivenda</a><br>
+          The aim of this project is to teach people to speak and write Tshivenda
+        </p>
+      </div>
     </div>
-  </body>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/tshimangadzo" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://twitter.com/mudzanani_mushe" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://facebook.com/tshimangadzo.mudzanani" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/tshimangadzo-mudzanani-23a3b7235/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
 </html>
