@@ -1,5 +1,3 @@
-
-
 const showData = (tabClicked) => {
   const myTabs = [
     {
@@ -28,7 +26,6 @@ const showData = (tabClicked) => {
   isTabClicked.forEach((tab) => {
     if (tab.isClicked) {
       document.getElementById(tab.tabName).style.display = "grid";
-      document.getElementById(tab.tabName).style.marginTop = "200px";
     } else {
       document.getElementById(tab.tabName).style.display = "none";
     }
