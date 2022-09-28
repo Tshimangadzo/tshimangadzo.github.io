@@ -12,8 +12,7 @@ body {
   display: grid;
 }
 
-.icon,
-.cancelIcon {
+#icons {
   display: none;
 }
 .header {
@@ -88,6 +87,8 @@ footer {
   height: 80px;
   align-items: center;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 footer li {
@@ -157,7 +158,30 @@ button {
   margin-top: 400px;
 }
 
+#aboutTab,
+#projectsTab,
+#skillsTab,
+#contactTab {
+  border-radius: 4px;
+}
+.headerResponsive{
+  display: grid;
+}
 @media screen and (max-width: 1119px) {
+  #aboutTab,
+  #projectsTab,
+  #skillsTab,
+  #contactTab {
+    padding: 30px;
+    border-radius: 4px;
+  }
+  .responsiveContent {
+    margin-top: 600px;
+  }
+  #icons{
+    display: grid;
+  }
+
   .container {
     width: 100%;
   }
@@ -169,6 +193,8 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: 160px;
+    margin-bottom: 100px;
   }
 
   .otherContent {
@@ -220,6 +246,8 @@ button {
   footer {
     height: 150px;
     font-size: 2em;
+    position: fixed;
+    bottom: 0;
   }
   input {
     height: 100px;

@@ -26,8 +26,12 @@ const showData = (tabClicked) => {
   isTabClicked.forEach((tab) => {
     if (tab.isClicked) {
       document.getElementById(tab.tabName).style.display = "grid";
+      document.getElementById(tab.tabName + "Tab").style.backgroundColor =
+        "#D3D3D3";
     } else {
       document.getElementById(tab.tabName).style.display = "none";
+      document.getElementById(tab.tabName + "Tab").style.backgroundColor =
+        "gray";
     }
   });
 };
