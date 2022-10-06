@@ -28,8 +28,8 @@ body {
 
 .otherContent {
   display: grid;
-  justify-self: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-self: center;
 }
 .top_search_data {
   margin: 0% 5% 2% 30%;
