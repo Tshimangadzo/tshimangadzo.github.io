@@ -13,8 +13,6 @@ Follow this link to get GUI [Morse code](https://tshimangadzo.github.io/projects
 
 ![alt text](https://github.com/Tshimangadzo/tshimangadzo.github.io/blob/main/projects/morsecode/images/Capture1.PNG)
 
-![alt text](https://github.com/Tshimangadzo/tshimangadzo.github.io/blob/main/projects/morsecode/images/Capture2.PNG)
-
 ![alt text](https://github.com/Tshimangadzo/tshimangadzo.github.io/blob/main/projects/morsecode/images/Capture3.PNG)
 
 ![alt text](https://github.com/Tshimangadzo/tshimangadzo.github.io/blob/main/projects/morsecode/images/Capture4.PNG)
