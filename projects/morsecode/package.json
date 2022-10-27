@@ -1,0 +1,25 @@
+{
+  "name": "morsecode",
+  "version": "1.0.0",
+  "description": "Morse code",
+  "main": "morsecode.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Tshimangadzo-Mudzanani-184-assertive-programming-kata-javascript.git"
+  },
+  "author": "Mudzanani Tshimangadzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Tshimangadzo-Mudzanani-184-assertive-programming-kata-javascript/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Tshimangadzo-Mudzanani-184-assertive-programming-kata-javascript#readme",
+  "dependencies": {
+    "jasmine-node": "^3.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.10.0"
+  }
+}

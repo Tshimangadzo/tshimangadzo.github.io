@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/main.js"></script>
+    <link rel="stylesheet" href="./styles//style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <title>Morse code translator</title>
+</head>
+
+<body>
+    <div class="card bg-dark text-white">
+        <div class="row no-gutters">
+            <div class="col-md-4 content">
+                <img src="./images/picture.jpg" class="card-img" alt="tone" />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    An online translation tool from morse code to letters and letters to morse code.
+                    <p class="card-text"><span class="results" id="results"></span></p>
+                    <div class="row">
+                        <div id="inputs" class="col-md-6">
+                            <input type="text" id="input_text" placeholder="Your input" />
+                        </div>
+                        <select name="translation" id="select_option" class="col-md-6 btn btn-primary" onchange="setPlaceHolder()">
+                            <option value="none" selected disabled hidden >Select translation</option>
+                            <option value="letters_to_morse_code">Letters to morse code</option>
+                            <option value="morse_code_to_letters">Morse code to letters</option>
+                        </select>
+                    </div>
+
+                    <div id="outputs" class="rounded">
+                        <span id="output"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
