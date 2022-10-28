@@ -1,0 +1,101 @@
+.board,
+.inputs,
+.timer {
+  display: grid;
+  margin: 5px;
+}
+.header {
+  margin: auto;
+}
+.inputs,
+.timer {
+  border-radius: 20px;
+  justify-items: center;
+}
+input {
+  margin: 0px 20px 0px 20px;
+}
+
+.cell {
+  border-radius: 20px;
+  cursor: pointer;
+  height: 100px;
+  margin: 2px;
+}
+
+.cellInitialColor {
+  background-color: brown;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+.black {
+  background-color: black;
+}
+.purple {
+  background-color: purple;
+}
+.gray {
+  background-color: gray;
+}
+.pink {
+  background-color: pink;
+}
+
+.modal {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.changeSize,
+.restart {
+  background-color: green;
+  height: 50px;
+}
+
+.restart {
+  display: none;
+  margin-top: 10px;
+}
+
+.btnDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.inputs {
+  display: none;
+  margin-top: 10px;
+}
+
+#submit {
+  background-color: green;
+}
+
+input {
+  width: 80%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.count,
+.time{
+  font-size: large;
+}

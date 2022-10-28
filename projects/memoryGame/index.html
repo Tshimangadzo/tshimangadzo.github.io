@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="text/javascript" src="./src/handleGrids.js"></script>
+    <script type="text/javascript" src="./src/main.js"></script>
+    <title>Memory game</title>
+  </head>
+  <body id="body" onload="start()">
+    <div class="modal">
+      <div class="btnDiv">
+        <button class="changeSize" id="changeSize" onclick="changeSize()">
+          Change size
+        </button>
+      </div>
+      <div class="btnDiv">
+        <button class="restart" id="restart" onclick="handleOnSubmitInputs()">
+          Restart
+        </button>
+      </div>
+      <div class="inputs" id="inputs">
+        <form id="form">
+          <input
+            type="number"
+            name="numberOfRowsString"
+            id="numberOfRowsString"
+            placeholder="Rows"
+            min="1"
+            max="16"
+            required
+          />
+          <input
+            type="number"
+            name="numberOfColumnsString"
+            id="numberOfColumnsString"
+            placeholder="Columns"
+            min="1"
+            max="16"
+            required
+          />
+          <input
+            type="submit"
+            id="submit"
+            name="submit"
+            onclick="handleOnSubmitInputs()"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="timer" id="timer">
+      <span class="count" id="count"></span>
+      <span class="time" id="time"></span>
+    </div>
+  </body>
+</html>
