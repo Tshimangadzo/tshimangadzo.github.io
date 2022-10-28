@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/main.js"></script>
+    <link rel="stylesheet" href="./styles//style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Semitone difference</title>
+  </head>
+  <body onload="displayNotes()">
+    <div class="card bg-dark text-white">
+      <div class="row no-gutters">
+        <div class="col-md-4 content">
+          <img src="./img/tone.jpg" class="card-img" alt="tone" />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <button class="btn btn-primary" onclick="displayNotes()">
+              Get random notes
+            </button>
+            <button
+              class="btn btn-primary revealAnswer"
+              onclick="revealNotes()"
+            >
+              Reveal answer
+            </button>
+            <span class="btn btn-primary" id="streak"></span>
+            <p class="card-text"><span class="results" id="results"></span></p>
+            <div id="inputs">
+              <input
+                type="number"
+                id="answer"
+                placeholder="Your answer"
+                disabled
+              />
+              <button
+                onclick="submitInputs()"
+                class="btn btn-primary"
+                id="answerBtn"
+                disabled
+              >
+                Submit answer
+              </button>
+            </div>
+            <div id="outputs">
+              <span id="output"></span>
+            </div>
+            <div id="notes"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

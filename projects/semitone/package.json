@@ -1,0 +1,24 @@
+{
+  "name": "tshimangadzo-mudzanani-199-semitone-difference-basic-algorithm-javascript",
+  "version": "1.0.0",
+  "description": "semitone difference - basic algorithm (199) For raw project instructions see: http://syllabus.africacode.net/projects/semitone-challenge/basic-algorithm/",
+  "main": "src/semitone.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node src/semitone.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Tshimangadzo-Mudzanani-199-semitone-difference-basic-algorithm-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Tshimangadzo-Mudzanani-199-semitone-difference-basic-algorithm-javascript/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Tshimangadzo-Mudzanani-199-semitone-difference-basic-algorithm-javascript#readme",
+  "dependencies": {
+    "jasmine": "^4.0.2",
+    "jsdom": "^19.0.0"
+  }
+}

@@ -1,0 +1,48 @@
+.card-text {
+  padding: 10px;
+}
+.card {
+  margin: auto;
+  margin-top: 50px;
+  width: 40rem;
+  margin-bottom: 100px;
+}
+img {
+  height: 100%;
+}
+#explanation {
+  width: 50%;
+}
+#streak {
+  cursor: default;
+  pointer-events: none;
+}
+
+#notes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 20rem;
+  }
+  button,
+  input {
+    width: 100%;
+  }
+  .revealAnswer,
+  #streak,
+  #answerBtn {
+    margin-top: 10px;
+  }
+
+  img {
+    height: 100%;
+  }
+  .content {
+    height: 200px;
+  }
+}
